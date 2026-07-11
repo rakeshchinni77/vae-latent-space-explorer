@@ -1,0 +1,48 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+*.env
+
+# VS Code settings
+.vscode/
+
+# PyTorch checkpoints and caches
+*.pt
+*.pth
+*.ckpt
+*.bin
+.pytorch_model.bin
+
+# pytest cache
+.pytest_cache/
+
+# Logs and debugging
+*.log
+logs/
+*.out
+
+# Temporary files
+.tmp/
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
