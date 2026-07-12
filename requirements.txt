@@ -1,0 +1,16 @@
+torch==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.3
+Pillow==10.3.0
+scikit-learn==1.4.2
+streamlit==1.35.0
+python-dotenv==1.0.1
+tqdm==4.4.3
+pytest==8.3.4
+black==24.10.0
+isort==5.0.1
+flake8==7.1.1
+notebook==7.1.2
+ipykernel==6.6.0

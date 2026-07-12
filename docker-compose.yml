@@ -1,0 +1,29 @@
+services:
+  # Main application service for the VAE latent space explorer.
+  app:
+    # Build the container from the project Dockerfile.
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Assign a fixed container name for easier management.
+    container_name: vae-latent-space-explorer
+
+    # Load environment variables from the project environment file.
+    env_file:
+      - .env
+
+    # Publish the Streamlit port to the host.
+    ports:
+      - "8501:8501"
+
+    # Restart the container automatically unless it is explicitly stopped.
+    restart: unless-stopped
+
+    # Healthcheck to verify the application is serving the Streamlit health endpoint.
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8501/_stcore/health || curl -f http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
