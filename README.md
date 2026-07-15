@@ -36,7 +36,7 @@ screenshots/
 1. Clone the repository:
 
 ```powershell
-git clone https://github.com/your-username/vae-latent-space-explorer.git
+git clone https://github.com/rakeshchinni77/vae-latent-space-explorer
 cd vae-latent-space-explorer
 ```
 
